@@ -3,167 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FitPro Services - Your Fitness Journey Starts Here</title>
+    <title>Kaizen Body Works - Links</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
         
         body {
             font-family: 'Inter', sans-serif;
+            background-color: #000000;
         }
         
-        .gradient-bg {
-            background: linear-gradient(135deg, #e11d48 0%, #be185d 100%);
+        .brand-green {
+            background-color: #00BF63;
         }
         
-        .link-button {
+        .brand-green-hover:hover {
+            background-color: #00A055;
+        }
+
+        .glow-effect {
+            box-shadow: 0 0 20px rgba(0, 191, 99, 0.3);
             transition: all 0.3s ease;
-            backdrop-filter: blur(10px);
+        }
+
+        .glow-effect:hover {
+             box-shadow: 0 0 30px rgba(0, 191, 99, 0.6);
         }
         
-        .link-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        .text-glow {
+            text-shadow: 0 0 10px rgba(0, 191, 99, 0.5);
         }
-        
+
         .pulse-animation {
             animation: pulse 2s infinite;
         }
         
         @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.7; }
+            0%, 100% { box-shadow: 0 0 20px rgba(0, 191, 99, 0.3); }
+            50% { box-shadow: 0 0 35px rgba(0, 191, 99, 0.7); }
         }
         
-        .social-icon:hover {
-            transform: scale(1.1);
-            transition: transform 0.2s ease;
+        .hero-pattern {
+            background-image: 
+                radial-gradient(circle at 25% 25%, rgba(0, 191, 99, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(0, 191, 99, 0.1) 0%, transparent 50%);
         }
     </style>
 </head>
-<body class="gradient-bg min-h-screen">
-    <div class="container mx-auto px-4 py-8 max-w-md lg:max-w-lg xl:max-w-xl">
+<body class="bg-black text-white overflow-x-hidden hero-pattern">
+
+    <div class="container mx-auto px-4 py-8 min-h-screen flex flex-col justify-center items-center">
+        
         <!-- Profile Section -->
         <div class="text-center mb-8">
-            <div class="relative inline-block mb-4">
-                <img src="https://i.imgur.com/QHUYhfn.jpeg" alt="Kaizen Body Works Profile" class="w-32 h-32 lg:w-40 lg:h-40 rounded-full object-cover shadow-lg border-4 border-white">
-                <div class="absolute -bottom-1 -right-1 w-6 h-6 bg-green-500 rounded-full border-2 border-white pulse-animation"></div>
-            </div>
-            <h1 class="text-4xl lg:text-5xl font-bold mb-2" style="color: #00bf63;">Kaizen Body Works</h1>
-            <p class="text-white text-lg mb-4">Better every day.</p>
-            <div class="bg-white/20 backdrop-blur-sm rounded-lg p-3 lg:p-4 text-white text-sm lg:text-base flex flex-col items-center mb-4">
-                <div class="text-left">
-                    🏋️‍♂️ Personal Trainer<br>
-                    💊 Pharmacology Coach<br>
-                    💪 Bodybuilding Coach<br>
-                    🧒 Youth Fitness Coach<br>
-                    🔧 Corrective Exercise Specialist<br>
-                    🥗 Nutrition Specialist<br>
-                    💕 Sexual Wellness Specialist
-                </div>
-            </div>
-            <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 lg:p-6 text-white text-center">
-                <p class="text-sm mb-2">📍 Reno/Sparks, NV</p>
-                <p class="text-sm mb-2">📞 <a href="tel:+17753862666" class="hover:text-green-300 transition-colors underline">(775) 386-2666</a></p>
-                <p class="text-xs text-purple-200">Available 5AM-8PM</p>
+            <img src="https://i.imgur.com/QHUYhfn.jpeg" alt="Kaizen Body Works Logo" class="w-32 h-32 mx-auto rounded-full border-4 border-[#00BF63] glow-effect mb-6">
+            <h1 class="text-3xl sm:text-4xl font-bold text-glow">KAIZEN</h1>
+            <h2 class="text-2xl sm:text-3xl font-light mb-2" style="color: #00BF63;">BODY WORKS</h2>
+            <p class="text-gray-300 text-lg">Command Presence! Build a Body That Speaks Before You Do.</p>
+            <div class="text-gray-400 text-sm mt-4 max-w-lg mx-auto leading-relaxed">
+                <p>Personal Trainer • Pharmacology Coach • Bodybuilding Coach • Youth Fitness Coach • Corrective Exercise Specialist • Nutrition Specialist • Sexual Wellness Specialist</p>
             </div>
         </div>
 
-        <!-- Main Service Links -->
-        <div class="space-y-4 lg:space-y-5 mb-8">
-
-
-            <a href="https://kaizeninnovations.github.io/BodyWorksPlansMain/" class="link-button block w-full bg-gradient-to-r from-purple-500 to-indigo-600 hover:from-purple-600 hover:to-indigo-700 text-white font-semibold py-4 lg:py-5 px-6 lg:px-8 rounded-xl text-center shadow-lg">
-                <div class="flex items-center justify-center space-x-3">
-                    <span class="text-xl">💰</span>
-                    <span>Plans and Pricing</span>
-                </div>
-                <p class="text-sm text-purple-100 mt-1">Choose your online or in person fitness plan</p>
+        <!-- Links Section -->
+        <div class="w-full max-w-md space-y-4">
+            <!-- Replace the '#' with your actual URLs -->
+            <a href="https://kaizeninnovations.github.io/BodyWorksPlansMain/" target="_blank" class="block w-full text-center brand-green brand-green-hover text-black px-6 py-4 rounded-lg text-lg font-bold transition-transform duration-300 transform hover:scale-105 glow-effect pulse-animation">
+                View Coaching Plans
             </a>
-
-
-
-            <a href="https://kaizeninnovations.github.io/Compound-Tracker-Dosage-Calculator/" class="link-button block w-full bg-white/90 hover:bg-white text-gray-800 font-semibold py-4 lg:py-5 px-6 lg:px-8 rounded-xl text-center shadow-lg">
-                <div class="flex items-center justify-center space-x-3">
-                    <span class="text-xl">🧮</span>
-                    <span>Compound Dosing and Syringe Calculator</span>
-                </div>
-                <p class="text-sm text-gray-600 mt-1">Calculate precise dosages</p>
+            <a href="https://kaizeninnovations.github.io/Compound-Tracker-Dosage-Calculator/" target="_blank" class="block w-full text-center brand-green brand-green-hover text-black px-6 py-4 rounded-lg text-lg font-bold transition-transform duration-300 transform hover:scale-105 glow-effect">
+                Compound Dosing & Syringe Calculator
             </a>
-
-
+             <a href="https://forms.gle/jCTLjkeAhU33jnHX7" target="_blank" class="block w-full text-center bg-yellow-500 hover:bg-yellow-400 text-black px-6 py-4 rounded-lg text-lg font-bold transition-transform duration-300 transform hover:scale-105">
+                Refer a Friend & Get Rewarded
+            </a>
+            <div class="flex justify-center">
+                <a href='https://ko-fi.com/J3J21FB0LZ' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi6.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+            </div>
         </div>
 
+        <!-- Footer -->
+        <footer class="text-center mt-12">
+            <div class="text-gray-400 text-sm mb-4 space-y-1">
+                <p>Reno/Sparks, NV</p>
+                <p><a href="tel:7753862666" class="hover:text-[#00BF63] transition-colors">(775) 386-2666</a></p>
+                <p>Available 5AM - 8PM</p>
+            </div>
+            <p class="text-gray-500">&copy; 2025 Kaizen Body Works. All rights reserved.</p>
+        </footer>
 
-
-
-
-        <!-- Ko-fi Support Widget -->
-        <div class="text-center mt-6">
-            <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
-            <script type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#00bf63', 'J3J21FB0LZ');kofiwidget2.draw();</script>
-        </div>
     </div>
 
-    <!-- Click Feedback Modal -->
-    <div id="clickModal" class="fixed inset-0 bg-black/50 backdrop-blur-sm hidden items-center justify-center z-50">
-        <div class="bg-white rounded-2xl p-6 mx-4 max-w-sm text-center transform transition-all">
-            <div class="text-4xl mb-3">🎉</div>
-            <h3 class="text-lg font-semibold text-gray-800 mb-2" id="modalTitle">Service Selected!</h3>
-            <p class="text-gray-600 text-sm mb-4" id="modalMessage">This would normally redirect to your booking page or service details.</p>
-            <button onclick="closeModal()" class="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-6 rounded-lg transition-colors">
-                Got it!
-            </button>
-        </div>
-    </div>
-
-    <script>
-        function handleLinkClick(service) {
-            const modal = document.getElementById('clickModal');
-            const title = document.getElementById('modalTitle');
-            const message = document.getElementById('modalMessage');
-            
-            title.textContent = `${service} Selected!`;
-            
-            const messages = {
-                'Personal Training': 'Ready to book your personal training session? This would take you to the scheduling page.',
-                'Nutrition Coaching': 'Interested in nutrition coaching? This would redirect to meal plan options and consultation booking.',
-                'Group Classes': 'Want to join group classes? This would show the class schedule and registration.',
-                'Online Programs': 'Looking for online training? This would display available programs and pricing.',
-                'Free Consultation': 'Great choice! This would open the consultation booking calendar.',
-                'Supplements': 'This would redirect to the recommended supplements store with discount codes.'
-            };
-            
-            message.textContent = messages[service] || 'This would redirect to the relevant service page.';
-            
-            modal.classList.remove('hidden');
-            modal.classList.add('flex');
-        }
-        
-        function handleSocialClick(platform) {
-            const modal = document.getElementById('clickModal');
-            const title = document.getElementById('modalTitle');
-            const message = document.getElementById('modalMessage');
-            
-            title.textContent = `${platform} Link Clicked!`;
-            message.textContent = `This would open the ${platform} profile or contact method.`;
-            
-            modal.classList.remove('hidden');
-            modal.classList.add('flex');
-        }
-        
-        function closeModal() {
-            const modal = document.getElementById('clickModal');
-            modal.classList.add('hidden');
-            modal.classList.remove('flex');
-        }
-        
-        // Close modal when clicking outside
-        document.getElementById('clickModal').addEventListener('click', function(e) {
-            if (e.target === this) {
-                closeModal();
-            }
-        });
-    </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9804244d3073468f',t:'MTc1ODA2NTMyMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</body>
 </html>
+
+
+
+
+
